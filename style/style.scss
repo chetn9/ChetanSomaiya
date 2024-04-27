@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    .philosopher-regular {
+        font-family: "Philosopher", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .philosopher-bold {
+        font-family: "Philosopher", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .philosopher-regular-italic {
+        font-family: "Philosopher", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .philosopher-bold-italic {
+        font-family: "Philosopher", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }     
+}
+body::-webkit-scrollbar
+{
+    width: 10px !important;
+}
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 15px;
+    background-color: #130f40;
+}
+body
+{
+    background-color: #f5f6fa !important;
+    font-family: "Philosopher", sans-serif !important;
+    font-weight: 700;
+    font-style: normal;
+    color: #130f40 !important;
+}
+.main-body
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main
+{    
+    flex: 1; 
+}
+
+.navbar
+{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+nav
+{
+    background: #3867d6 !important;
+    margin: 5px;
+    border-radius: 5px;
+}
+#intro
+{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.my-name span
+{
+    color: #4070f4;
+    font-weight: 900 !important;
+}
+.my-btns button
+{
+    width: 110px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35);
+    border-radius: 5px !important;
+    letter-spacing: 1px;
+}
+.my-btns button:nth-child(2)
+{
+    background-color: #3867d6 !important;
+    color: #fff;
+}
+
+#work-btn
+{
+    background-color: #ED4C67; // #273c75
+    border-color: #ccc;
+    transition: 0.2s linear;
+}
+#work-btn:hover
+{
+    background-color: #4080f9;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.intro_section1
+{
+    margin-top: 15px;
+    padding: 15px;
+    background: url("../bg-3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: max-content;
+    // min-height: 80vh;
+    
+}
+
+.intro_main1
+{
+//     background: rgba(0,0,0,0.8);
+//   backdrop-filter: saturate(180%) blur(10px);
+    color: white;
+    padding: 30px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#My-Profile-Photo img
+{
+    // mix-blend-mode: multiply;
+    // height: 350px;
+    // box-shadow: 0 0 5px #ccc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+    background-color: #ED4C67 !important;
+    // border-radius: 65% 100% 60% 93% !important; 
+    // border-radius: 50% !important; 
+}
+@media screen and (max-width: 768px) 
+{
+    body{
+        .my-btns
+        {
+            //transform: translateY(40vh) !important;
+            //margin-top: 100px;
+        }
+        // display: none !important;
+    }    
+}
+#My-Profile-Photo img:hover
+{
+    // transform: rotateY(180deg);
+}
+// .img-bg
+// {
+//     //height: 300px !important;
+//     width: 350px !important;
+// }
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.my_intro_part
+{
+    // background-color:  #ccc;
+    border-radius: 10px;
+    // height: 80vh;
+   
+}
+
+#my-works img
+{
+    height: 300px;
+    margin: 5px;
+}
+
+#my-works a
+{
+    color: #130f40 !important;
+}
+
+
+.work-1, .work-2
+{
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+.work-1:hover
+{
+    opacity: 0.5;
+} 
+.work-2:hover
+{
+    opacity: 0.5;    
+}
+
+.skill_icon i
+{
+    font-size: 20px !important;
+    margin-left: 5px;
+}
+.fa-bootstrap
+{
+    color: #7910f2 !important;
+    //display: none;
+}
+.fa-php
+{
+    color: #4d588e !important;
+}
+
+.Data_head
+{
+    color: #3867d6 !important;
+    font-weight: 700 !important;
+}
+
+.text_chng span
+{
+    position: relative;
+} 
+.text_chng span::before { 
+    content: "App Developer"; 
+    //color: #f5f6fa;
+    animation: words infinite 5s; 
+    padding-left: 10px; 
+}
+.text_chng span::after { 
+    content: "";
+    width: calc(100% + 8px);
+    position: absolute;
+    height: 100%;
+    background-color: #130f40; 
+    border-left: 2px solid #4080f9;
+    right: -8px;
+    animation: animate infinite .5s, type 20s steps(14) infinite; 
+} 
+@keyframes animate { 
+  
+    to{
+        border-left: 2px solid #130f40;
+    }    
+} 
+@keyframes words 
+{
+    0%,20% { 
+        content: "Web Developer"; 
+    } 
+    21%,40%
+    {
+        content: "Gaming";
+    }
+    41%,60%
+    {
+        content: "BGMI";
+    }
+    61%,80%{
+        content: "PUBG";
+    }
+    81%,100% { 
+        content: "Android Developer"; 
+    }     
+}
+@keyframes type 
+{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%   
+    {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%   
+    {
+        width: calc(100% + 8px);
+    }
+}
+.java
+{
+   background-color:#EE5A24 !important;
+}
+footer
+{
+    // background-color: ; //#130f40
+    // background-color: #d1d8e0 !important;
+    background-color: #7910f2;
+    //margin: 5px;
+    color: #fff;
+    //border-radius: 5px;
+    flex-shrink: 0;
+    text-align: center;
+}
+footer a
+{
+    color: #FFC312 !important;
+    letter-spacing: 2px;
+    
+}
