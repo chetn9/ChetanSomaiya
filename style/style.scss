@@ -43,6 +43,7 @@ body
     font-weight: 700;
     font-style: normal;
     color: #130f40 !important;
+    position: relative !important;
 }
 .main-body
 {
@@ -62,6 +63,7 @@ body
 
 nav
 {
+    position: sticky !important;
     background: #3867d6 !important;
     margin: 5px;
     border-radius: 5px;
@@ -148,7 +150,12 @@ nav
             //margin-top: 100px;
         }
         // display: none !important;
-    }    
+        position: absolute !important;
+    }  
+    nav
+    {
+        position: sticky !important;
+    }  
 }
 #My-Profile-Photo img:hover
 {

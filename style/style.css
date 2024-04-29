@@ -39,6 +39,7 @@ body {
   font-weight: 700;
   font-style: normal;
   color: #130f40 !important;
+  position: relative !important;
 }
 
 .main-body {
@@ -56,6 +57,7 @@ body {
 }
 
 nav {
+  position: sticky !important;
   background: #3867d6 !important;
   margin: 5px;
   border-radius: 5px;
@@ -122,6 +124,14 @@ nav {
   background-color: #ED4C67 !important;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    position: absolute !important;
+  }
+  nav {
+    position: sticky !important;
+  }
+}
 .carousel-control-next,
 .carousel-control-prev {
   filter: invert(100%);
