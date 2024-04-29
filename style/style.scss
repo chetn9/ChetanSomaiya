@@ -141,15 +141,48 @@ nav
     // border-radius: 65% 100% 60% 93% !important; 
     // border-radius: 50% !important; 
 }
+.work-1:hover .overlay
+{
+    opacity: 1;
+}
+.work-2:hover .overlay
+{
+    opacity: 1;
+}
+.text {
+    color: white !important;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.text a
+{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+.overlay {
+    position: absolute;
+    top: 5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    margin: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #27ae60;
+    transition: 0.4s ease !important;
+}
 @media screen and (max-width: 768px) 
 {
     body{
-        .my-btns
-        {
-            //transform: translateY(40vh) !important;
-            //margin-top: 100px;
-        }
-        // display: none !important;
+        
         position: absolute !important;
     }  
     nav
@@ -157,15 +190,6 @@ nav
         position: sticky !important;
     }  
 }
-#My-Profile-Photo img:hover
-{
-    // transform: rotateY(180deg);
-}
-// .img-bg
-// {
-//     //height: 300px !important;
-//     width: 350px !important;
-// }
 
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
@@ -176,8 +200,7 @@ nav
 {
     // background-color:  #ccc;
     border-radius: 10px;
-    // height: 80vh;
-   
+    // height: 80vh;  
 }
 
 #my-works img
@@ -190,7 +213,6 @@ nav
 {
     color: #130f40 !important;
 }
-
 
 .work-1, .work-2
 {

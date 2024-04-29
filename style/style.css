@@ -124,6 +124,44 @@ nav {
   background-color: #ED4C67 !important;
 }
 
+.work-1:hover .overlay {
+  opacity: 1;
+}
+
+.work-2:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white !important;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  margin: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #27ae60;
+  transition: 0.4s ease !important;
+}
+
 @media screen and (max-width: 768px) {
   body {
     position: absolute !important;
