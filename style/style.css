@@ -159,7 +159,7 @@ nav {
 
 @media screen and (max-width: 768px) {
   body {
-    position: absolute !important;
+    position: relative !important;
   }
   nav {
     position: sticky !important;
