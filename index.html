@@ -287,35 +287,27 @@
 
     <script>
         $(document).ready(function() {
-           // alert($(window).width());
            $(window).scroll(function(){
                var posi = $(document).scrollTop();
-               console.log(posi);
-
                 if($(window).width() < 980)
                 {
                     if(posi > 830)
                     {
                         $("#My-skills").fadeIn(100);
                         $("#skill_img").addClass("animate__animated animate__fadeInUp");
-                        // alert("821");
                     }
-                    
                 }
                 else if($(window).width() > 980)
                 {
-                    // $("#set").html(""+posi);
                     if(posi > 300)
                     {
                         $("#My-skills").fadeIn(100);
                         $("#skill_img").addClass("animate__animated animate__fadeInUp");
-                        // alert("821");
                     }
                 }
                 else
                 {
                     $("#My-skills").fadeIn(100);
-
                 }
                 
             });
@@ -332,14 +324,6 @@
                 $(".main-body").attr("style", "background-color: #f5f6fa !important; color: #130f40 !important");
                 dm = 1;
             }
-        });
-
-        var getlen = 0;
-        // $(".progress").css("width", "0");
-        $(".html").click(function(){
-            getlen = $(this).position().top;
-            $(".progress").css("width", "60%");
-            // alert(getlen);
         });
     </script>
 
