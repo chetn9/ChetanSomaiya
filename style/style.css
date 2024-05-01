@@ -142,11 +142,6 @@ nav {
   text-align: center;
 }
 
-.text a {
-  text-decoration: none !important;
-  color: #fff !important;
-}
-
 .overlay {
   position: absolute;
   top: 5;
@@ -168,6 +163,23 @@ nav {
   }
   nav {
     position: sticky !important;
+  }
+  .overlay {
+    position: absolute;
+    top: 5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    margin: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #27ae60;
+    transition: 0.4s ease !important;
+  }
+  #my-work h2 {
+    font-size: 25px;
   }
 }
 .carousel-control-next,
@@ -206,6 +218,24 @@ nav {
   margin-left: 5px;
 }
 
+.project2 .carousel-item img {
+  height: 500px !important;
+}
+
+.progress-bar {
+  animation: anim 5s linear forwards;
+  opacity: 0;
+}
+
+@keyframes anim {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .fa-bootstrap {
   color: #7910f2 !important;
 }
