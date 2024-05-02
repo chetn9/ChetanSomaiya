@@ -185,6 +185,9 @@ nav {
   #my-work h2 {
     font-size: 25px;
   }
+  .text_chng {
+    font-size: 18px;
+  }
 }
 .carousel-control-next,
 .carousel-control-prev {
