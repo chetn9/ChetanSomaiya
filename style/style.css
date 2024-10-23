@@ -78,6 +78,12 @@ nav {
   font-weight: 900 !important;
 }
 
+.my-btns a {
+  width: 110px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35);
+  border-radius: 5px !important;
+  letter-spacing: 1px;
+}
 .my-btns button {
   width: 110px;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35);
@@ -85,7 +91,7 @@ nav {
   letter-spacing: 1px;
 }
 
-.my-btns button:nth-child(2) {
+.my-btns a:nth-child(2) {
   background-color: #3867d6 !important;
   color: #fff;
 }
@@ -124,7 +130,9 @@ nav {
 }
 
 #My-Profile-Photo img {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px; */
+  /* box-shadow: rgba(0, 0, 0, 0.35)30% 70% 70% 30% / 30% 30% 70% 70% ; */
+  /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important; */
 }
 
 .work-1:hover .overlay {
